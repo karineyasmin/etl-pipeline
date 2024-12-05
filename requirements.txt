@@ -16,13 +16,11 @@ packaging==24.2
 platformdirs==4.3.6
 pluggy==1.5.0
 pre_commit==4.0.1
-pylint==3.3.2
 pytest==8.3.4
 PyYAML==6.0.2
 requests==2.32.3
 requests-mock==1.12.1
 soupsieve==2.6
 tomlkit==0.13.2
-types-requests==2.32.0.20241016
 urllib3==2.2.3
 virtualenv==20.28.0
