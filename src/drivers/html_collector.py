@@ -1,12 +1,14 @@
-from .interfaces.html_collector import HtmlCollectorInterface
 from typing import List, Dict
 from bs4 import BeautifulSoup
+from .interfaces.html_collector import HtmlCollectorInterface
 
 
 class HtmlCollector(HtmlCollectorInterface):
+
     @classmethod
     def collect_essential_information(cls, html: str) -> List[Dict[str, str]]:
         soup = BeautifulSoup(html, "html.parser")
+
         artist_name_list = soup.find(class_="BodyText")
         artist_name_list_items = artist_name_list.find_all("a")
 
