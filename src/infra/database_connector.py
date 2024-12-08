@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 
-class DatabaseConnector:
+class DatabaseConnection:
     connection = None
 
     @classmethod
