@@ -9,10 +9,11 @@ class DatabaseRepository(DatabaseRepositoryInterface):
         query = """
                 INSERT INTO artists
                     (first_name, second_name, nickname, artist_id, link, extraction_date)
-                VALUES
-                (%s, %s, %s, %s, %s, %s,)
+                VALUES 
+                (%s, %s, %s, %s, %s, %s)
                 """
 
         cursor = DatabaseConnection.connection.cursor()
         cursor.execute(query, list(data.values()))
+
         DatabaseConnection.connection.commit()
